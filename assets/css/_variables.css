@@ -1,0 +1,15 @@
+/* CSS Variables (colors picked from coolors.co */
+:root{
+    --dark-slate-gray: #283E3Aff;
+    --gray-web: #747E7Fff;
+    --feldgrau: #385245ff;
+    --spanish-gray: #989FA0ff;
+    --cadet: #596A6Cff;
+}
+/* Font Family google fonts */
+
+@font-face {
+    font-family: "Mont";
+    src: url(../../vendor/fonts/Montserrat-VariableFont_wght.ttf);
+}
+
