@@ -1,0 +1,15 @@
+.category{
+    width: 100%;
+    height: 10vh;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    
+}
+
+.category .link{
+    box-shadow: 0 2px 0 var(--opacity-cadet);
+    padding: 0.1rem 0.5rem;
+    color: var(--feldgrau);
+    font-weight: 800;
+}
