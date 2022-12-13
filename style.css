@@ -1,3 +1,12 @@
+/* 
+    Theme Name: First wp Theme
+    Theme URI: 
+    Author: Boguslaw M
+    Author URI: https://github.com/BoodziooPL
+    Description: My First Wordpress Theme. Code is not refactorized yet.
+    Version: 1.0
+*/
+
 /* import css files*/
 @import url(./assets/css/_variables.css);
 /* import header css */

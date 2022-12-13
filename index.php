@@ -1,68 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wordpress Theme</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="/style.css">
-</head>
-<body>
+
+<!-- z szablonu HTML wyciecie header i footer, wrzucenie zawartosci do 2 plikow, nastepnie import za pomoca php GET -->
 
 
-<!-- Header Area     -->
-<header class="header-area">
-<div class="container">
-    <nav class="nav">
-        <a href="#" class="link nav-brand text-light">
-            <img src="./assets/img/tree-logo.png" class="logo-img" alt="logo">
-        </a>
-        
-        
-        
-        <div class="nav-items">
-            <!-- toggle menu -->
-            <button class="toggle-button">
-                <i class="fa-solid fa-bars"></i>
-            </button>
-            <!-- navigation items -->
-            <div class="collapse" id="toggle-collapse">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-link">
-                    <a href="#" class="link text-light">Home</a>
-                </li>
-                <li class="nav-link">
-                    <a href="#" class="link text-light">People</a>
-                </li>
-                <li class="nav-link">
-                    <a href="#" class="link text-light">About Us</a>
-                </li>
-                <li class="nav-link">
-                    <a href="#" class="link text-light">Contact</a>
-                </li>
-            </ul>
-            <!-- search bar -->
-            <div class="search">
-                <form class="form-group">
-                    <input type="search" class="input-control mr-sm-2" placeholder="Search">
-                    <button class="btn btn-submit" type="submit"><i class="fas fa-search"></i></button>
-                </form>
-            </div>
-        </div>
-    </nav>
-</div>
-</div>
-<div class="move-mouse">
-    <img src="./assets/img/mouse-cursor.png" alt="mouseIcon" class="mouse-icon">
-</div>
-        
-</header>
-<!-- End Header Area -->
-
-
-<!-- Main Area -->
-<main>
+<?php 
+get_header();
+?>
 <!-- Categories Section -->
 <section class="categories">
     <div class="container">
@@ -202,6 +144,7 @@
     </div>
 </section>
 <!-- End Post Area -->
+
 <!-- About Us Area -->
 <section class="about-area">
     <div class="wrapper">
@@ -227,46 +170,10 @@
     </div>
 </section>
 <!-- End About Us Area -->
-</main>
-<!-- End Main Area -->
+
 
 
 <!-- Footer Area -->
-<footer>
-    <section class="footer-area">
-        <div class="container">
-            <div class="info-area">
-                <span class="title-text">Wordpress Theme:001</span> 
-            </div>
-            <div>
-                <span class="title-text">Links:</span>
-                <ul>
-                <li class="nav-link">
-                    <a href="#" class="link text-light">Home</a>
-                </li>
-                <li class="nav-link">
-                    <a href="#" class="link text-light">People</a>
-                </li>
-                <li class="nav-link">
-                    <a href="#" class="link text-light">About Us</a>
-                </li>
-                <li class="nav-link">
-                    <a href="#" class="link text-light">Contact</a>
-                </li>
-            </ul>
-        </div>
-        <div>
-            <span>&copy All Rights Reserved</span>
-            <a href="https://github.com/BoodziooPL" class="link">Created By Boguslaw M. For Wordpress</a>
-        </div>
-    </div>
-        
-    </section>
-</footer>
-<!-- End Footer Area -->
-
-<!-- include script files -->
-<script src="./vendor/js/jquery.js"></script>
-<script src="./assets/js/main.js"></script>
-</body>
-</html>
+<?php 
+get_footer();
+?>
