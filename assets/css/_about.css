@@ -1,0 +1,55 @@
+section.about-area{
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+}
+
+section.about-area .wrapper{
+    width: 80%;
+}
+
+.about-img{
+    width: 60%;
+    height: 8rem;
+}
+
+.people-area{
+    display: flex;
+    margin-top: 3rem;
+    
+}
+.about-photo{
+    width: 100%;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+
+}
+
+.about-us{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: flex-start;
+}
+
+.ml-0{
+    margin-left: 0;
+}
+
+
+
+@media only screen and (max-width:670px){
+    .people-area{
+        flex-direction: column;
+        gap: 3rem;
+    }
+
+    .about-img{
+        width: 80%;
+        height: 10rem;
+    }
+}
