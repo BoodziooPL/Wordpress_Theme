@@ -14,7 +14,12 @@
 <div class="container">
     <nav class="nav">
         <a href="#" class="link nav-brand text-light">
-            <img src="./assets/img/tree-logo.png" class="logo-img" alt="logo">
+
+        <!-- ponizej kod dodajacy mozliwosc ustawienia loga, if/else dla ustawienia nazwy strony gdy brak wgranego logo -->
+            <?php if(function_exists('the_custom_logo')){
+                the_custom_logo();
+            }else{
+            bloginfo('name');} ?>
         </a>
         
         
