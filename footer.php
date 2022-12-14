@@ -24,7 +24,7 @@
         </div>
         <div>
             <span>&copy All Rights Reserved</span>
-            <a href="https://github.com/BoodziooPL" class="link">Created By Boguslaw M. For Wordpress</a>
+            <a href="https://github.com/BoodziooPL" class="link">Created By Boguslaw M.</a>
         </div>
     </div>
         
@@ -32,8 +32,5 @@
 </footer>
 <!-- End Footer Area -->
 
-<!-- include script files -->
-<script src="./vendor/js/jquery.js"></script>
-<script src="./assets/js/main.js"></script>
 </body>
 </html>

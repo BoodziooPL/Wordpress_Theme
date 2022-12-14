@@ -29,8 +29,8 @@
         <div class="nav-items">
             <!-- toggle menu -->
             <button class="toggle-button">
-                <!-- podanie sciezki do pliku png za pomoca bloginfo templateURL -->
-                <img src="<?php bloginfo('template_url')?> /assets/img/hamburger.png" alt="hamburger menu icon">
+                <!-- podanie sciezki do pliku png za pomoca bloginfo || zmiana na get_template_directory_uri z blog info czyni kod elastyczniejszym i pozwala na przypuszczalne zmiany folderow templateURL -->
+                <img src="<?php echo get_template_directory_uri() ?>/assets/img/hamburger.png" alt="hamburger menu icon"/>
             </button>
             <!-- navigation items -->
             <div class="collapse" id="toggle-collapse">
@@ -48,11 +48,9 @@
             
             <!-- search bar -->
             <div class="search">
-                <form class="form-group">
-                    <input type="search" class="input-control mr-sm-2" placeholder="Search">
-                    <!-- podanie sciezki do pliku png za pomoca bloginfo templateURL -->
-                    <button class="btn btn-submit" type="submit"><img src="<?php echo get_bloginfo('template_url') ?>/assets/img/search.png"/></button>
-                </form>
+                <!-- ustawienie searchbaru na stronie -->
+                <?php get_search_form(); ?>
+                 
             </div>
         </div>
     </nav>
@@ -60,7 +58,7 @@
 </div>
 <div class="move-mouse">
     <!-- podanie sciezki do pliku png za pomoca bloginfo templateURL -->
-    <img src="<?php echo get_bloginfo('template_url') ?> /assets/img/mouse-cursor.png" alt="mouseIcon" class="mouse-icon">
+    <img src="<?php echo get_template_directory_uri() ?> /assets/img/mouse-cursor.png" alt="mouseIcon" class="mouse-icon">
 </div>
         
 </header>

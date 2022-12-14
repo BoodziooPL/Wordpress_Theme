@@ -3,14 +3,16 @@
 Theme:My theme
 
 */
-
+add_action("wp_enqueue_scripts","fn_theme_scripts");
 function fn_theme_scripts(){
    //## implementacja głównego CSS'a
    wp_enqueue_style( 'main-stylesheet',get_stylesheet_uri( ), array(), rand(111,9999), 'all' );
    // ## dodajemy js'a
-   wp_enqueue_script( 'main', get_template_directory_uri() . '/assets/js/main.js');
+   wp_enqueue_script( 'main', get_template_directory_uri().'/assets/js/main.js');
+
 }
-add_action("wp_enqueue_scripts","fn_theme_scripts");
+
+
 
 function fn_theme_supports(){
     // dodanie tagu title do head

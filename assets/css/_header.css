@@ -130,7 +130,12 @@ img.mouse-icon{
 }
 
 
+
 @media screen and (max-width: 710px) {
+
+    img.mouse-icon{
+        display: none;
+    }
     .collapse{
         display: none;
         
@@ -138,14 +143,20 @@ img.mouse-icon{
     .collapseOpen{
             
             width: 100%;
-            height: 100vh;
+            height: 80vh;
             display: flex;
+            position: absolute;
+            top: 20vh;
             flex-direction: column;
             justify-content: center;
             justify-items: center;
             background-color: var(--opacity-cadet);
-            margin-right: 0;
+            left: 0;
             
+        }
+
+        .navbar-nav {
+            text-align: center;
         }
 
         .collapse ul {
@@ -179,5 +190,7 @@ img.mouse-icon{
             justify-content: center;
             align-items: center;
         }
+
+   
 
   }
