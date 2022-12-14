@@ -9,21 +9,7 @@ get_header();
 <section class="categories">
     <div class="container">
         <div class="flex category">
-            <a href="#" class="link">
-                <span>All</span>
-            </a>
-            <a href="#" class="link">
-                <span>Commercial</span>
-            </a>
-            <a href="#" class="link">
-                <span>Plants</span>
-            </a>
-            <a href="#" class="link">
-                <span>Nature</span>
-            </a>
-            <a href="#" class="link">
-                <span>At the world</span>
-            </a>
+            <?php get_template_part('templates/temp/categories','content')?>
         </div>
     </div>
 </section>
