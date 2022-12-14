@@ -18,114 +18,11 @@ get_header();
 <section class="post-area">
     <div class="wrapper">
         <div class="articles">
-            <article class="blog-post">
-                <div class="post-thumbnail">
-                    <img src="./assets/img/post-1 (1).jpg" alt="forrest" class="post-img">
-                </div>
-                <div class="post-info">
-                    <div class="post-author">
-                        <a href="#"><span class="author-text">by Admin November 2022</span></a>
-                    </div>
-                    <div class="post-title">
-                        <a href="#"><span class="title-text">Meet Future of nature</span></a>
-                    </div>
-                    <div class="post-content">
-                        <p class="para">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque ipsa asperiores, eveniet beatae sunt aliquam?
-                        </p>
-                    </div>
-                </div>
-            </article>
-            <article class="blog-post">
-                <div class="post-thumbnail">
-                    <img src="./assets/img/post-1 (2).jpg" alt="forrest" class="post-img">
-                </div>
-                <div class="post-info">
-                    <div class="post-author">
-                        <a href="#"><span class="author-text">by Admin November 2022</span></a>
-                    </div>
-                    <div class="post-title">
-                        <a href="#"><span class="title-text">Meet Future of nature</span></a>
-                    </div>
-                    <div class="post-content">
-                        <p class="para">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque ipsa asperiores, eveniet beatae sunt aliquam?
-                        </p>
-                    </div>
-                </div>
-            </article>
-            <article class="blog-post">
-                <div class="post-thumbnail">
-                    <img src="./assets/img/post-1 (3).jpg" alt="forrest" class="post-img">
-                </div>
-                <div class="post-info">
-                    <div class="post-author">
-                        <a href="#"><span class="author-text">by Admin November 2022</span></a>
-                    </div>
-                    <div class="post-title">
-                        <a href="#"><span class="title-text">Meet Future of nature</span></a>
-                    </div>
-                    <div class="post-content">
-                        <p class="para">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque ipsa asperiores, eveniet beatae sunt aliquam?
-                        </p>
-                    </div>
-                </div>
-            </article>
-            <article class="blog-post">
-                <div class="post-thumbnail">
-                    <img src="./assets/img/post-1 (4).jpg" alt="forrest" class="post-img">
-                </div>
-                <div class="post-info">
-                    <div class="post-author">
-                        <a href="#"><span class="author-text">by Admin November 2022</span></a>
-                    </div>
-                    <div class="post-title">
-                        <a href="#"><span class="title-text">Meet Future of nature</span></a>
-                    </div>
-                    <div class="post-content">
-                        <p class="para">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque ipsa asperiores, eveniet beatae sunt aliquam?
-                        </p>
-                    </div>
-                </div>
-            </article>
-            <article class="blog-post">
-                <div class="post-thumbnail">
-                    <img src="./assets/img/post-1 (5).jpg" alt="forrest" class="post-img">
-                </div>
-                <div class="post-info">
-                    <div class="post-author">
-                        <a href="#"><span class="author-text">by Admin November 2022</span></a>
-                    </div>
-                    <div class="post-title">
-                        <a href="#"><span class="title-text">Meet Future of nature</span></a>
-                    </div>
-                    <div class="post-content">
-                        <p class="para">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque ipsa asperiores, eveniet beatae sunt aliquam?
-                        </p>
-                    </div>
-                </div>
-            </article>
-            <article class="blog-post">
-                <div class="post-thumbnail">
-                    <img src="./assets/img/post-1 (6).jpg" alt="forrest" class="post-img">
-                </div>
-                <div class="post-info">
-                    <div class="post-author">
-                        <a href="#"><span class="author-text">by Admin November 2022</span></a>
-                    </div>
-                    <div class="post-title">
-                        <a href="#"><span class="title-text">Meet Future of nature</span></a>
-                    </div>
-                    <div class="post-content">
-                        <p class="para">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque ipsa asperiores, eveniet beatae sunt aliquam?
-                        </p>
-                    </div>
-                </div>
-            </article>
+            <?php
+            // Wczytywanie artykulow na stronę
+            get_template_part('templates/temp/post','content');
+            ?>
+           
         </div>
     </div>
 </section>
@@ -140,15 +37,15 @@ get_header();
             </div>
             <div class="people-area"> 
                 <div class="flex about-photo">
-                <img src="./assets/img/man-avatar.png" alt="Human photo" class="about-img">
+                <img src="<?php echo $image_url; ?>" alt="Human photo" class="about-img">
                 <span class="title-text">Peter Wool</span>
             </div>
             <div class="flex about-photo">
-                <img src="./assets/img/man-avatar.png" alt="Human photo" class="about-img">
+                <img src="<?php echo $image_url; ?>" alt="Human photo" class="about-img">
                 <span class="title-text">Peter Wool</span>
             </div>
             <div class="flex about-photo">
-                <img src="./assets/img/man-avatar.png" alt="Human photo" class="about-img">
+                <img src="<?php echo $image_url; ?>" alt="Human photo" class="about-img">
                 <span class="title-text">Peter Wool</span>
             </div>
         </div>

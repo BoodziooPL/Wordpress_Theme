@@ -42,5 +42,22 @@ function add_link_atts($atts){
     return $atts; //zwrocenie zmienionych linkow ($atts)
 }
 // wywolanie funkcji przez add_filter Nie add_action
-add_filter('nav_menu_link_attributes', 'add_link_atts')
+add_filter('nav_menu_link_attributes', 'add_link_atts');
+
+
+// Pobierz ID obrazu z panelu administracyjnego WordPress
+$image_id = get_field('photo');
+
+// Jeśli obraz jest dostępny, pobierz adres URL obrazu
+if( $image_id ) {
+    $image_url = wp_get_attachment_image_src( $image_id, 'full' )[0];
+}
+
+// Jeśli obraz nie jest dostępny, ustaw domyślny adres URL obrazu
+else {
+    $image_url = get_template_directory_uri() . '/assets/img/man-avatar.png';
+}
+
+
 ?>
+

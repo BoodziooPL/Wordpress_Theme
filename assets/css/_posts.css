@@ -25,6 +25,8 @@ article.blog-post, .post-author, .post-title, .para{
   
 }
 
+
+
 section.post-area .post-img{
     width: 50%;
     height: 40vh;
@@ -36,6 +38,7 @@ section.post-area .post-img{
     display: flex;
     justify-content: center;
 }
+
 .author-text{
     color: var(--gray-web);
     font-size: 0.8rem;
