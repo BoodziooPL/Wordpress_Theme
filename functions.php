@@ -7,7 +7,6 @@ Theme:My theme
 function fn_theme_scripts(){
    //## implementacja głównego CSS'a
    wp_enqueue_style( 'main-stylesheet',get_stylesheet_uri( ), array(), rand(111,9999), 'all' );
-    
    // ## dodajemy js'a
    wp_enqueue_script( 'main', get_template_directory_uri() . '/assets/js/main.js');
 }

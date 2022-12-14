@@ -32,15 +32,13 @@ align-items: center;
 .toggle-button{
     width: 3rem;
     height: 3rem;
-    font-size: 1.5rem;
-    text-align: center;
     display: none;
     border-radius: 5px;
     cursor: pointer;
     margin-right: 2rem;
-    background: transparent;
-    color: var(--gray-web);
-    border-color: var(--dark-slate-gray);
+    background-color: transparent;
+    border: transparent;
+   
 }
 
 
@@ -98,6 +96,7 @@ header.header-area .form-group button.btn.btn-submit{
     border: none;
     border-radius: 2px;
     color: var(--dark-slate-gray);
+    
 }
 header.header-area .form-group button.btn.btn-submit:hover{
   background-color: var(--dark-slate-gray);
@@ -171,7 +170,9 @@ img.mouse-icon{
            
         }
         .toggle-button{
-            display: inline;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
 
   }

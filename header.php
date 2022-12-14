@@ -13,7 +13,7 @@
 <header class="header-area">
 <div class="container">
     <nav class="nav">
-        <a href="#" class="link nav-brand text-light">
+        <div>   <a href="#" class="link nav-brand text-light">
 
         <!-- ponizej kod dodajacy mozliwosc ustawienia loga, if/else dla ustawienia nazwy strony gdy brak wgranego logo -->
             <?php if(function_exists('the_custom_logo')){
@@ -21,13 +21,15 @@
             }else{
             bloginfo('name');} ?>
         </a>
+    </div>
+     
         
         
         
         <div class="nav-items">
             <!-- toggle menu -->
             <button class="toggle-button">
-                <i class="fa-solid fa-bars"></i>
+                <img src="<?php bloginfo('template_url')?> /assets/img/hamburger.png" alt="hamburger menu icon">
             </button>
             <!-- navigation items -->
             <div class="collapse" id="toggle-collapse">
@@ -49,7 +51,7 @@
             <div class="search">
                 <form class="form-group">
                     <input type="search" class="input-control mr-sm-2" placeholder="Search">
-                    <button class="btn btn-submit" type="submit"><i class="fas fa-search"></i></button>
+                    <button class="btn btn-submit" type="submit"><img src="<?php echo get_bloginfo('template_url') ?>/assets/img/search.png"/></button>
                 </form>
             </div>
         </div>
@@ -57,7 +59,7 @@
 </div>
 </div>
 <div class="move-mouse">
-    <img src="./assets/img/mouse-cursor.png" alt="mouseIcon" class="mouse-icon">
+    <img src="<?php echo get_bloginfo('template_url') ?> /assets/img/mouse-cursor.png" alt="mouseIcon" class="mouse-icon">
 </div>
         
 </header>
