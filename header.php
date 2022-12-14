@@ -29,28 +29,28 @@
         <div class="nav-items">
             <!-- toggle menu -->
             <button class="toggle-button">
+                <!-- podanie sciezki do pliku png za pomoca bloginfo templateURL -->
                 <img src="<?php bloginfo('template_url')?> /assets/img/hamburger.png" alt="hamburger menu icon">
             </button>
             <!-- navigation items -->
             <div class="collapse" id="toggle-collapse">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-link">
-                    <a href="#" class="link text-light">Home</a>
-                </li>
-                <li class="nav-link">
-                    <a href="#" class="link text-light">People</a>
-                </li>
-                <li class="nav-link">
-                    <a href="#" class="link text-light">About Us</a>
-                </li>
-                <li class="nav-link">
-                    <a href="#" class="link text-light">Contact</a>
-                </li>
-            </ul>
+                <?php
+                //rejestracja navigacji menu
+                if(has_nav_menu('primary-menu')){
+                    wp_nav_menu( array(
+                        'theme_location' => 'primary-menu',
+                        'container' => '',
+                        'items_wrap' => '<ul class="navbar-nav mr-auto">%3$s</ul>'
+                    ));
+                    // kod wywoluje menu glowne o nazwie primary-menu nie "owija" w zaden kontener (container) i itemy printuje w tagu <ul> o klasie navbar-nav mr-auto
+                }
+                ?>
+            
             <!-- search bar -->
             <div class="search">
                 <form class="form-group">
                     <input type="search" class="input-control mr-sm-2" placeholder="Search">
+                    <!-- podanie sciezki do pliku png za pomoca bloginfo templateURL -->
                     <button class="btn btn-submit" type="submit"><img src="<?php echo get_bloginfo('template_url') ?>/assets/img/search.png"/></button>
                 </form>
             </div>
@@ -59,6 +59,7 @@
 </div>
 </div>
 <div class="move-mouse">
+    <!-- podanie sciezki do pliku png za pomoca bloginfo templateURL -->
     <img src="<?php echo get_bloginfo('template_url') ?> /assets/img/mouse-cursor.png" alt="mouseIcon" class="mouse-icon">
 </div>
         

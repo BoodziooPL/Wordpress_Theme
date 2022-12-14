@@ -49,6 +49,7 @@ align-items: center;
     flex-direction: row;
 }
 
+
 .collapse{
    
     margin-right: 2rem;
@@ -57,12 +58,12 @@ align-items: center;
     width: 100%;
     justify-content: space-around;
     align-items: center;
+    gap: 1rem;
 }
 
 .collapseClose{
     display: none !important;
 }
-
 
 .navbar-nav .nav-link a{
     padding: 0 1vw;
@@ -71,6 +72,10 @@ align-items: center;
     font-weight: 800;
     transition: 0.5s;
       
+}
+
+.navbar-nav{
+    gap: 1rem;
 }
 .navbar-nav a.link:hover{
     
