@@ -1,18 +1,3 @@
-<!-- <a href="#" class="link">
-                <span>All</span>
-            </a>
-            <a href="#" class="link">
-                <span>Commercial</span>
-            </a>
-            <a href="#" class="link">
-                <span>Plants</span>
-            </a>
-            <a href="#" class="link">
-                <span>Nature</span>
-            </a>
-            <a href="#" class="link">
-                <span>At the world</span>
-            </a> -->
 
 <?php
 /**
