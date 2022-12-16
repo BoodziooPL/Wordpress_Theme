@@ -7,20 +7,19 @@
             </div>
             <div>
                 <span class="title-text">Links:</span>
-                <ul>
-                <li class="nav-link">
-                    <a href="#" class="link text-light">Home</a>
-                </li>
-                <li class="nav-link">
-                    <a href="#" class="link text-light">People</a>
-                </li>
-                <li class="nav-link">
-                    <a href="#" class="link text-light">About Us</a>
-                </li>
-                <li class="nav-link">
-                    <a href="#" class="link text-light">Contact</a>
-                </li>
-            </ul>
+                <?php
+                //rejestracja navigacji menu
+                if(has_nav_menu('footer-menu')){
+                    wp_nav_menu( array(
+                        'theme_location' => 'footer-menu',
+                        'container' => '',
+                        'items_wrap' => '<ul>%3$s</ul>'
+                    ));
+                    // kod wywoluje menu glowne o nazwie footer-menu nie "owija" w zaden kontener (container) i itemy printuje w tagu <ul>
+                }
+                ?>
+                
+
         </div>
         <div>
             <span>&copy All Rights Reserved</span>
