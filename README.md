@@ -19,9 +19,9 @@ The graphics on the website were taken from the following pages:
 
 
 ## Screens:
-![alt text](https://github.com/BoodziooPL/Wordpress_Theme/FullScreenShoot.png)
+![alt text](https://github.com/BoodziooPL/Wordpress_Theme/blob/main/FullScreenShoot.png)
 
-![alt text](https://github.com/BoodziooPL/Wordpress_Theme/localhost_wordpress_(iPhone SE) (1).png)
-![alt text](https://github.com/BoodziooPL/Wordpress_Theme/localhost_wordpress_(iPhone SE).png)
-![alt text](https://github.com/BoodziooPL/Wordpress_Theme/screenshot.png)
+![alt text](https://github.com/BoodziooPL/Wordpress_Theme/blob/main/localhost_wordpress_(iPhone%20SE).png)
+![alt text](https://github.com/BoodziooPL/Wordpress_Theme/blob/main/localhost_wordpress_(iPhone%20SE)%20(1).png)
+![alt text](https://github.com/BoodziooPL/Wordpress_Theme/blob/main/localhost_wordpress_%20(2).png)
 
