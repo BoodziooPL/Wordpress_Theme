@@ -19,7 +19,8 @@ Editable elements from the admin panel include:
 The graphics on the website were taken from the following pages:<br>
 - https://www.flaticon.com/ <br>
 - https://unsplash.com/ <br>
-# This theme was created solely for exercise purposes and should not be used for commercial purposes.
+
+## This theme was created solely for exercise purposes and should not be used for commercial purposes.
 
 
 ## Screens:
