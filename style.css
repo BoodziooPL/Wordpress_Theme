@@ -19,6 +19,8 @@
 @import url(./assets/css/_about.css);
 /* import footer area css */
 @import url(./assets/css/_footer-area.css);
+/* import single-post css */
+@import url(./assets/css/_single.css);
 *,
 html{
    margin: 0 ;

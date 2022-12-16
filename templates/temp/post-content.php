@@ -16,10 +16,10 @@ if ( $posts ) {
             </div>
             <div class="post-info">
                 <div class="post-author">
-                    <a href="#"><span class="author-text"><?php echo get_the_author( $post->ID ); ?> <?php echo get_the_date( '', $post->ID ); ?></span></a>
+                    <a href="<?php echo get_author_posts_url(get_the_author_meta('ID'))?>"><span class="author-text"><?php echo get_the_author( $post->ID ); ?> <?php echo get_the_date( '', $post->ID ); ?></span></a>
                 </div>
                 <div class="post-title">
-                    <a href="<?php echo get_the_permalink( $post->ID ); ?>"><span class="title-text"><?php echo get_the_title( $post->ID ); ?></span></a>
+                    <a href="<?php the_permalink(); ?>"><span class="title-text"><?php echo get_the_title( $post->ID ); ?></span></a>
                 </div>
                 <div class="post-content">
                     <p class="para"><?php echo get_the_excerpt( $post->ID ); ?></p>

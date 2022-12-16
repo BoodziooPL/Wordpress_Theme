@@ -1,0 +1,28 @@
+.container-single,
+.single{
+    width: 100%;
+    min-height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: space-around;
+    gap: 2rem;
+}
+
+.single{
+    flex-direction: column;
+    text-align: center;
+}
+
+
+
+.container-single img{
+    width: 50%;
+    height: 40%;
+}
+
+.container-single p,.container-single h1,.container-single h2,.container-single h3,.container-single a{
+    width: 50%;
+    color: var(--feldgrau);
+}
+
