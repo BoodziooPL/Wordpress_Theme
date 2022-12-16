@@ -3,6 +3,10 @@
 Theme:My theme
 
 */
+
+//add customizer.php 
+require_once('templates/helpers/customizer.php');
+
 add_action("wp_enqueue_scripts","fn_theme_scripts");
 function fn_theme_scripts(){
    //## implementacja głównego CSS'a
@@ -60,4 +64,3 @@ else {
 
 
 ?>
-

@@ -32,22 +32,23 @@ get_header();
 <section class="about-area">
     <div class="wrapper">
         <div class="about-us">
-            <h2 class="title-text">We are a passionate of nature:</h2>
-            <p class="para ml-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod eaque totam nihil quasi eligendi provident perspiciatis aliquid quia consequatur, illum labore excepturi exercitationem dolor possimus? Optio quam voluptatum placeat autem, aspernatur quisquam doloribus. Ad veniam cumque odit, expedita temporibus laborum.</p>
+            <h2 class="title-text"><?php echo get_theme_mod('title') ?></h2>
+            <p class="para ml-0"><?php echo get_theme_mod('description') ?></p>
             </div>
             <div class="people-area"> 
-                <div class="flex about-photo">
-                <img src="<?php echo $image_url; ?>" alt="Human photo" class="about-img">
-                <span class="title-text">Peter Wool</span>
+            <div class="flex about-photo">
+                 <img src="<?php echo get_theme_mod('Human Img1') ?>" alt="Human photo" class="about-img">
+                <span class="title-text"><?php echo get_theme_mod('Human Name1') ?></span>
             </div>
             <div class="flex about-photo">
-                <img src="<?php echo $image_url; ?>" alt="Human photo" class="about-img">
-                <span class="title-text">Peter Wool</span>
+                 <img src="<?php echo get_theme_mod('Human Img2') ?>" alt="Human photo" class="about-img">
+                <span class="title-text"><?php echo get_theme_mod('Human Name2') ?></span>
             </div>
             <div class="flex about-photo">
-                <img src="<?php echo $image_url; ?>" alt="Human photo" class="about-img">
-                <span class="title-text">Peter Wool</span>
+                 <img src="<?php echo get_theme_mod('Human Img3') ?>" alt="Human photo" class="about-img">
+                <span class="title-text"><?php echo get_theme_mod('Human Name3') ?></span>
             </div>
+
         </div>
            
     </div>
