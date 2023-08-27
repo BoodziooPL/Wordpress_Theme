@@ -26,7 +26,5 @@ The graphics on the website were taken from the following pages:<br>
 ## Screens:
 ![alt text](https://github.com/BoodziooPL/Wordpress_Theme/blob/main/FullScreenShoot.png) <br>
 
-![alt text](https://github.com/BoodziooPL/Wordpress_Theme/blob/main/localhost_wordpress_(iPhone%20SE).png) <br>
-![alt text](https://github.com/BoodziooPL/Wordpress_Theme/blob/main/localhost_wordpress_(iPhone%20SE)%20(1).png) <br>
-![alt text](https://github.com/BoodziooPL/Wordpress_Theme/blob/main/localhost_wordpress_%20(2).png)
+
 
